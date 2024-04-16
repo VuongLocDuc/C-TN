@@ -1,0 +1,238 @@
+{
+	"QMainWindow":[
+		{
+			"tittle":"INVENTORY MANAGEMENT INFORMATION SYSTEM",
+			"icon":":/images/images/IMIS.png",
+			"frameless": true,
+			"transluscentBg": true,
+			"sizeGrip": "sizeGrip",
+			"navigation":[
+				{
+					"minimize":"minimizeBtn",
+					"close": "closeBtn",
+					"restore":[
+						{	
+							"buttonName": "restoreBtn",
+							"normalIcon": ":/icons/icons/square.svg",
+							"maximizedIcon": ":/icons/icons/copy.svg"
+						}
+					],
+					"moveWindow": "headerContainer",
+					"tittleBar": "headerContainer"
+				}
+			]
+		}
+	],
+	"QCustomSlideMenu": [
+		{
+			"name": "leftMenuContainer",
+			"defaultSize": [{
+				"width": 45,
+				"height": "parent"
+			}],
+			"collapsedSize": [{
+				"width": 45,
+				"height": "parent"
+			}],
+			"expandedSize": [{
+				"width": 270,
+				"height": "parent"
+			}],
+			"toggleButton": [{
+				"buttonName": "menuBtn",
+				"icons": [{
+					"whenMenuIsCollapsed": ":/icons/icons/align-justify.svg",
+					"whenMenuIsExpanded": ":/icons/icons/chevron-left.svg"
+				}]
+			}],
+			"menuTransitionAnimation": [{
+				"animationDuration": 500,
+				"animationEasingCurve": "Linear"
+			}]
+		},
+		{
+			"name": "centerMenuContainer",
+			"defaultSize": [{
+				"width": 0,
+				"height": "parent"
+			}],
+			"collapsedSize": [{
+				"width": 0,
+				"height": "parent"
+			}],
+			"expandedSize": [{
+				"width": 200,
+				"height": "parent"
+			}],
+			"menuTransitionAnimation": [{
+				"animationDuration": 500,
+				"animationEasingCurve": "Linear"
+			}]
+		},
+		{
+			"name": "rightMenuContainer",
+			"defaultSize": [{
+				"width": 0,
+				"height": "auto"
+			}],
+			"collapsedSize": [{
+				"width": 0,
+				"height": "auto"
+			}],
+			"expandedSize": [{
+				"width": 270,
+				"height": "auto"
+			}],
+			"menuTransitionAnimation": [{
+				"animationDuration": 500,
+				"animationEasingCurve": "Linear"
+			}]
+		},
+		{
+			"name": "popupNotificationContainer",
+			"defaultSize": [{
+				"width": 0,
+				"height": "auto"
+			}],
+			"collapsedSize": [{
+				"width": 0,
+				"height": "auto"
+			}],
+			"expandedSize": [{
+				"width": 500,
+				"height": 500
+			}],
+			"menuTransitionAnimation": [{
+				"animationDuration": 500,
+				"animationEasingCurve": "Linear"
+			}],
+			"floatPosition": [
+				{
+					"relativeTo": "centralwidget",
+					"position": "center-center",
+					"shadow":[
+						{
+							"color": "#000",
+							"blurRadius": 20,
+							"xOffset": 0,
+							"yOffset": 0
+						}
+					]
+				}
+			],
+			"toggleButton": [{
+				"buttonName": "notificationBtn"
+			}]
+		}
+	],
+	"QCustomQStackedWidget":[
+		{
+			"name":"mainPages",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"homeBtn": "page_22",
+							"khoTb": "page_23",
+							"taiKhoanTb": "page_24",
+							"kiemTraTonKho": "page_7",
+							"sS": "page_27",
+							"capNhatDuLieu": "page_9",
+							"bcTonKhoHang": "page_11",
+							"vatTuTb": "page_13",
+							"ptABC":"page_26",
+							"rop":"page_28",
+							"tquan":"page_30"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name":"centerMenuPages",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							
+							"infoBtn": "page_2",
+							"helpBtn": "page_3"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name":"rightMenuPages",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							"profileMenuBtn": "page_20",
+							"moreMenuBtn": "page_21",
+							"thayDoiMKBtn": "page_10"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name":"checkTonPages",
+			"navigation":[
+				{
+					"navigationButtons":[
+						{
+							
+							"tkdRadioBtn": "page_15",
+							"dhRadioBtn": "page_16",
+							"ycghRadioBtn": "page_17"
+						}
+					]
+				}
+			]
+		}
+	],
+	"QSettings": [
+        {
+            "ThemeSettings": [
+                {
+                    "CustomTheme": [
+                        {
+                            "Background-color": "#16191d",
+                            "Text-color": "#fff",
+                            "Accent-color": "#03C3C3",
+                            "Theme-name": "Dark-Blue",
+                            "Default-Theme": false
+                        },
+                        {
+                            "Background-color": "#ffff",
+                            "Text-color": "#070808",
+                            "Accent-color": "#0F9696",
+                            "Theme-name": "Light-Blue",
+                            "Default-Theme": true,
+                            "Icons-color": "#0F6464"
+                        },
+                        {
+                            "Background-color": "#e6f0f2",
+                            "Text-color": "#070808",
+                            "Accent-color": "#FF4100",
+                            "Theme-name": "Light-Orange",
+                            "Create-icons": false
+                        },
+                        {
+                            "Background-color": "#021924",
+                            "Text-color": "#d9dde0",
+                            "Accent-color": "#02d3c1",
+                            "Theme-name": "Dark-Night"
+                        }
+                    ]
+                }
+            ],
+            "AppSettings": {
+                "OrginizationName": "FPT Telecom",
+                "ApplicationName": "IMIS",
+                "OrginizationDormain": "fptel.org"
+            }
+        }
+    ]
+}
